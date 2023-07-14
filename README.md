@@ -31,3 +31,12 @@ Procedure to install command line toolchain and perform a sanity check to progra
    ```make clean && make```
 12. ### The LED on the Blue Pill should be blinking!
 </details>
+<details>
+
+   <summary>Windows Installation Procedure (Click to expand)</summary>
+   
+1. Install Git for Windows
+2. Install STM32CubeProgrammer
+3. Install GNU Make for Windows
+4. Install GNU Arm Embedded Toolchain
+</details>
