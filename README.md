@@ -17,7 +17,8 @@ Procedure to install command line toolchain and perform a sanity check to progra
    ```sudo apt install make```
 7. Install arm-none-eabi toolchain<br>
    ```sudo apt install gcc-arm-none-eabi```
-8. Download sample blinky file and move to that directory<br>
+8. Navigate to where you want to keep your STM32 projects (example: ```cd ~/bench/stm32```).<br>
+   Then download sample blinky file and move to that directory<br>
    ```git clone https://github.com/sandynomike/STM32F103-CMSIS-Blinky && cd STM32F103-CMSIS-Blinky```
 9. Connect the ST-Link programmer to a USB port and connect the ST-Link programmer to your Blue Pill
 10. Build and upload the code to the Blue Pill<br>
