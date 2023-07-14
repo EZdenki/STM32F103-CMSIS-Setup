@@ -5,8 +5,8 @@ Procedure to install command line toolchain and perform a sanity check to progra
 1. Install STM32CubeProgrammer<br>
    https://www.st.com/en/development-tools/stm32cubeprog.html<br>
    Follow the registration and download instructions. Extract the zip file. Enter the new directory, double-click on linux installer,
-   and follow the installation instructions.
-3. Install libusb-1.0-0-dev<br>
+   (SetupSTM32CubeProgrammer-x.xx.x.linux) and follow the installation instructions.
+3. Install libusb-1.0-0-dev<br> (From the command line)
    ```sudo apt install libusb-1.0-0-dev```
 4. Add permissions to use USB ST-Link Programmer<br>
    ```sudo cp ~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/Drivers/rules/*.* /etc/udev/rules.d```
