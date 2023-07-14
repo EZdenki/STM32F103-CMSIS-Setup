@@ -1,6 +1,9 @@
 # STM32F103-CMSIS-Setup for Linux or Windows (Windows instructions coming soon!)
 Procedure to install command line toolchain and perform a sanity check to program the STM32F103 (Blue Pill) under Linux or Windows <br>
-## Linux Installation Procedure
+<details>
+   
+<summary>Linux Installation Procedure (Click to expand)</summary>
+
 1. Install STM32CubeProgrammer<br>
    https://www.st.com/en/development-tools/stm32cubeprog.html<br>
    Follow the registration and download instructions. Extract the zip file. Enter the new directory, double-click on the linux installer,
@@ -27,3 +30,4 @@ Procedure to install command line toolchain and perform a sanity check to progra
 11. Build and upload the code to the Blue Pill.<br>
    ```make clean && make```
 12. ### The LED on the Blue Pill should be blinking!
+</details>
