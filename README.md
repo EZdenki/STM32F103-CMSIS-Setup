@@ -35,8 +35,35 @@ Procedure to install command line toolchain and perform a sanity check to progra
 
    <summary>Windows Installation Procedure (Click to expand)</summary>
    
-1. Install Git for Windows
+1. Install Git for Windows<br>
+   https://gitforwindows.org/<br>
+   Download and install. Accept default settings, except:<br>
+   Under the option for **Adjusting the name of the initial branch in new repositories**,
+   select the option to **Override the default branch name for new repositories** and specify the branch name as **main**.
 2. Install STM32CubeProgrammer
-3. Install GNU Make for Windows
-4. Install GNU Arm Embedded Toolchain
+   https://www.st.com/en/development-tools/stm32cubeprog.html<br>
+   Click **Get Software** and then **Get latest** for **STM32CubePrg-W64**<br>
+   Accept license agreement and enter your name and email address and click **Download**. Close this page and open the email from STMicroelectronics.<br>
+   Click the **Download now** button in the confirmation email to start the download. (This will open another download webpage,
+   but **don't** click on Get Software again.)
+   Double-click on the downloaded zip file to open, and double-click on the **SetupSTM32CubeProgrammer_win64** program to install.<br>
+   Follow the installation instructions, including installing the **device software**
+3. Add a Path variable to point to the STM32CubeProgrammer_CLI.exe file<br>
+   Click the Windows Key and type "environment variables" and select **Edit the system environment variables**<br>
+   Click on **Environment Variables...**<br>
+   Under **User variables...**, click **New...**<br>
+   Under **Variable name:**, type **STMCUBE_PROG**<br>
+   Click **Browse File...**, and navigate to:<br>
+   **C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin\STM32_Programmer_CLI** application, and click **Open**, and then click **OK**.<br>
+   Click **OK** twice more to exit the dialog boxes.
+4. Install GNU Make for Windows<br>
+   https://gnuwin32.sourceforge.net/downlinks/make.php<br>
+   Run the downloaded make-3.81.exe file. Accept the default installation options.<br>
+5. Add a Path ennvironment variable to point to Make.<br>
+   Click the Windows Key and type "environment variables" and select **Edit the system environment variables**<br>
+   Click on **Environment Variables...**<br>
+   Under the **User variables...** section click on the **Path** line and then click **Edit..**<br>
+   Then click **New** and then **Browse...** Browse to This PC -> Local Disk (C:) -> Program Files (x86) -> GnuWin32 -> bin, then click **OK**<br>
+   Click **OK** 3 times to exit the dialog boxes.
+8. Install GNU Arm Embedded Toolchain
 </details>
