@@ -12,7 +12,7 @@ Procedure to install command line toolchain and perform a sanity check to progra
    ```sudo cp ~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/Drivers/rules/*.* /etc/udev/rules.d```
 5. Create persistant environment variable to point to the STM32_Programmer_CLI executable (to be used within Makefile). Note that if the path
    to STM32_Programmer_CLI is different, then the following line must be modified accordingly.<br>
-   ```export STMCUBE_PROG = "~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI"```
+   ```export STMCUBE_PROG=~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI```
 6. Install make<br>
    ```sudo apt install make```
 7. Install arm-none-eabi toolchain<br>
