@@ -1,13 +1,13 @@
 # STM32F103-CMSIS-Setup for Linux or Windows
-Procedure to install command line toolchain and perform a sanity check to program the STM32F103 (Blue Pill) under Linux or Windows <br>
+Procedure to install a bare-bones, command-line based, CMSIS-based toolchain to program the STM32F103 (Blue Pill) under Linux or Windows *without STM's HAL*. Includes a "Blinky" sanity check to confirm the toolchain is properlly installed and working.<br>
 <details>
    
 <summary>Linux Installation Procedure (Click to expand)</summary>
 
 1. Install STM32CubeProgrammer<br>
    https://www.st.com/en/development-tools/stm32cubeprog.html<br>
-   Follow the registration and download instructions. Extract the zip file. Enter the new directory, double-click on the linux installer,
-   **SetupSTM32CubeProgrammer-x.xx.x.linux**, and follow the installation instructions.
+   Follow the registration and download instructions. Extract the zip file. Enter the new directory, double-click on the
+   linux installer, **SetupSTM32CubeProgrammer-x.xx.x.linux**, and follow the installation instructions.
 2. Install "libusb-1.0-0-dev" (From the command line).<br>
    ```sudo apt install libusb-1.0-0-dev```
 3. Add permissions to use USB ST-Link Programmer.<br>
