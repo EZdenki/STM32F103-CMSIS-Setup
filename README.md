@@ -40,10 +40,10 @@ Procedure to install command line toolchain and perform a sanity check to progra
    Download and install. Accept default settings, except:<br>
    Under the option for **Adjusting the name of the initial branch in new repositories**,
    select the option to **Override the default branch name for new repositories** and specify the branch name as **main**.
-2. Install STM32CubeProgrammer
+2. Install STM32CubeProgrammer<br>
    https://www.st.com/en/development-tools/stm32cubeprog.html<br>
    Click **Get Software** and then **Get latest** for **STM32CubePrg-W64**<br>
-   Accept license agreement and enter your name and email address and click **Download**. Close this page and open the email from STMicroelectronics.<br>
+   Accept license agreement and enter your name and email address and click **Download**. Close this page and open the email from STMicroelectronics.
    Click the **Download now** button in the confirmation email to start the download. (This will open another download webpage,
    but **don't** click on Get Software again.)
    Double-click on the downloaded zip file to open, and double-click on the **SetupSTM32CubeProgrammer_win64** program to install.<br>
@@ -63,7 +63,22 @@ Procedure to install command line toolchain and perform a sanity check to progra
    Click the Windows Key and type "environment variables" and select **Edit the system environment variables**<br>
    Click on **Environment Variables...**<br>
    Under the **User variables...** section click on the **Path** line and then click **Edit..**<br>
-   Then click **New** and then **Browse...** Browse to This PC -> Local Disk (C:) -> Program Files (x86) -> GnuWin32 -> bin, then click **OK**<br>
+   Then click **New** and then **Browse...** Browse to This PC -> Local Disk (C:) -> Program Files (x86) -> GnuWin32 -> bin, then click **OK**.<br>
    Click **OK** 3 times to exit the dialog boxes.
-8. Install GNU Arm Embedded Toolchain
+6. Install GNU Arm Embedded Toolchain<br>
+   https://developer.arm.com/downloads/-/gnu-rm<br>
+   **Do not** click on the Arm GNU Toolchain at the top of the page. Scroll down to link for:<br>
+   **gcc-arm-none-eabi-10.3-2021.10-win32.exe**. Click on the link to download. Open the downloaded file. Follow the default settings, except,
+   under **Completing the GNU Arm Embedded Toolchain 10.3-2021.10 Setup Wizard**, check the box that says **Add path to environment variable**
+   before clicking **Finish**. Close the *r*eadme** document and close the command-line terminal that pops up.<br>
+9. Open a command-line terminal (<Windows-Key> -> **command prompt**. From the command prompt:<br>
+   Navigate to where you want to keep your STM32 projects (example, after creating the desired directory, ```cd ~/bench/stm32```).<br>
+   Then clone the sample blinky project to your PC and move to that directory.<br>
+   ```git clone https://github.com/sandynomike/STM32F103-CMSIS-Blinky && cd STM32F103-CMSIS-Blinky```
+10. Connect the ST-Link programmer to a USB port and connect the ST-Link programmer to your Blue Pill. Note that if the ST-Link programmer
+   was already connected during the installation process, then you should unplug it from the USB port and plug it in again so that is recognized.
+11. Build and upload the code to the Blue Pill.<br>
+   ```make clean && make```
+12. ### The LED on the Blue Pill should be blinking!
+   **End of Procedure**
 </details>
