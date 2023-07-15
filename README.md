@@ -17,19 +17,20 @@ Procedure to install command line toolchain and perform a sanity check to progra
    **~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin**<br>
    then the following line must be modified accordingly.<br>
    ```export STMCUBE_PROG=~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI```
-6. Install "make".<br>
+5. Install "make".<br>
    ```sudo apt install make```
-7. Install arm-none-eabi toolchain. Note that if the install of gcc-arm-none-eabi gives an error due to lack of disc space, then the command
+6. Install arm-none-eabi toolchain. Note that if the install of gcc-arm-none-eabi gives an error due to lack of disc space, then the command
    can be run again and may correctly install.<br>
    ```sudo apt install gcc-arm-none-eabi```
-9. Navigate to where you want to keep your STM32 projects (example: ```cd ~/bench/stm32```).<br>
+7. Download and build a simple Blinky project as a sanity check<br>
+   Navigate to where you want to keep your STM32 projects (example: ```cd ~/bench/stm32```).<br>
    Then clone the sample blinky project to your PC and move to that directory.<br>
    ```git clone https://github.com/sandynomike/STM32F103-CMSIS-Blinky && cd STM32F103-CMSIS-Blinky```
-10. Connect the ST-Link programmer to a USB port and connect the ST-Link programmer to your Blue Pill. Note that if the ST-Link programmer
+8. Connect the ST-Link programmer to a USB port and connect the ST-Link programmer to your Blue Pill. Note that if the ST-Link programmer
    was already connected during the installation process, then you should unplug it from the USB port and plug it in again so that is recognized.
-11. Build and upload the code to the Blue Pill.<br>
+9. Build and upload the code to the Blue Pill.<br>
    ```make clean && make```
-12. ### The LED on the Blue Pill should be blinking!
+10. ### The LED on the Blue Pill should be blinking!
 </details>
 <details>
 
@@ -63,22 +64,26 @@ Procedure to install command line toolchain and perform a sanity check to progra
    Click the Windows Key and type "environment variables" and select **Edit the system environment variables**<br>
    Click on **Environment Variables...**<br>
    Under the **User variables...** section click on the **Path** line and then click **Edit..**<br>
-   Then click **New** and then **Browse...** Browse to This PC -> Local Disk (C:) -> Program Files (x86) -> GnuWin32 -> bin, then click **OK**.<br>
+   Then click **New** and then **Browse...** Browse to This PC -> Local Disk (C:) -> Program Files (x86) -> GnuWin32 -> bin,
+   then click **OK**.<br>
    Click **OK** 3 times to exit the dialog boxes.
-6. Install GNU Arm Embedded Toolchain<br>
+7. Install GNU Arm Embedded Toolchain<br>
    https://developer.arm.com/downloads/-/gnu-rm<br>
    **Do not** click on the Arm GNU Toolchain at the top of the page. Scroll down to link for:<br>
-   **gcc-arm-none-eabi-10.3-2021.10-win32.exe**. Click on the link to download. Open the downloaded file. Follow the default settings, except,
-   under **Completing the GNU Arm Embedded Toolchain 10.3-2021.10 Setup Wizard**, check the box that says **Add path to environment variable**
+   **gcc-arm-none-eabi-10.3-2021.10-win32.exe**. Click on the link to download. Open the downloaded file. Follow the default
+   settings, except, under **Completing the GNU Arm Embedded Toolchain 10.3-2021.10 Setup Wizard**, check the box that says
+   **Add path to environment variable**
    before clicking **Finish**. Close the **readme** document and close the command-line terminal that pops up.<br>
-9. Open a command-line terminal (by touching the **Windows-Key**, then type ```command prompt```). From the command prompt:<br>
-   Navigate to where you want to keep your STM32 projects (example, after creating the desired directory, ```cd ~/bench/stm32```).<br>
+9. Download and build a simple Blinky project as a sanity check<br>
+   Open a command-line terminal (by touching the **Windows-Key**, then type ```command prompt```). From the command prompt:<br>
+   Navigate to where you want to keep your STM32 projects (example, after creating the desired directory,
+   ```cd ~/bench/stm32```).<br>
    Then clone the sample blinky project to your PC and move to that directory.<br>
    ```git clone https://github.com/sandynomike/STM32F103-CMSIS-Blinky && cd STM32F103-CMSIS-Blinky```
-10. Connect the ST-Link programmer to a USB port and connect the ST-Link programmer to your Blue Pill. Note that if the ST-Link programmer
+11. Connect the ST-Link programmer to a USB port and connect the ST-Link programmer to your Blue Pill. Note that if the ST-Link programmer
    was already connected during the installation process, then you should unplug it from the USB port and plug it in again so that is recognized.
-11. Build and upload the code to the Blue Pill.<br>
+12. Build and upload the code to the Blue Pill.<br>
    ```make clean && make```
-12. ### The LED on the Blue Pill should be blinking!
+13. ### The LED on the Blue Pill should be blinking!
    **End of Procedure**
 </details>
