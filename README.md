@@ -45,8 +45,8 @@ Procedure to install command line toolchain and perform a sanity check to progra
    Click **Get Software** and then **Get latest** for **STM32CubePrg-W64**<br>
    Accept license agreement and enter your name and email address and click **Download**. Close this page and open the email from STMicroelectronics.
    Click the **Download now** button in the confirmation email to start the download. (This will open another download webpage,
-   but **don't** click on Get Software again.)
-   Double-click on the downloaded zip file to open, and double-click on the **SetupSTM32CubeProgrammer_win64** program to install.<br>
+   but **don't** click on Get Software again.)<br>
+   Open the zip file and double-click on the **SetupSTM32CubeProgrammer_win64** program to install.<br>
    Follow the installation instructions, including installing the **device software**
 3. Add a Path variable to point to the STM32CubeProgrammer_CLI.exe file<br>
    Click the Windows Key and type "environment variables" and select **Edit the system environment variables**<br>
@@ -70,7 +70,7 @@ Procedure to install command line toolchain and perform a sanity check to progra
    **Do not** click on the Arm GNU Toolchain at the top of the page. Scroll down to link for:<br>
    **gcc-arm-none-eabi-10.3-2021.10-win32.exe**. Click on the link to download. Open the downloaded file. Follow the default settings, except,
    under **Completing the GNU Arm Embedded Toolchain 10.3-2021.10 Setup Wizard**, check the box that says **Add path to environment variable**
-   before clicking **Finish**. Close the *r*eadme** document and close the command-line terminal that pops up.<br>
+   before clicking **Finish**. Close the **readme** document and close the command-line terminal that pops up.<br>
 9. Open a command-line terminal (by touching the **Windows-Key**, then type ```command prompt```). From the command prompt:<br>
    Navigate to where you want to keep your STM32 projects (example, after creating the desired directory, ```cd ~/bench/stm32```).<br>
    Then clone the sample blinky project to your PC and move to that directory.<br>
