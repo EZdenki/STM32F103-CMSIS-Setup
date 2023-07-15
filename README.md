@@ -71,7 +71,7 @@ Procedure to install command line toolchain and perform a sanity check to progra
    **gcc-arm-none-eabi-10.3-2021.10-win32.exe**. Click on the link to download. Open the downloaded file. Follow the default settings, except,
    under **Completing the GNU Arm Embedded Toolchain 10.3-2021.10 Setup Wizard**, check the box that says **Add path to environment variable**
    before clicking **Finish**. Close the *r*eadme** document and close the command-line terminal that pops up.<br>
-9. Open a command-line terminal (<Windows-Key> -> **command prompt**. From the command prompt:<br>
+9. Open a command-line terminal (by touching the **Windows-Key**, then type ```command prompt```). From the command prompt:<br>
    Navigate to where you want to keep your STM32 projects (example, after creating the desired directory, ```cd ~/bench/stm32```).<br>
    Then clone the sample blinky project to your PC and move to that directory.<br>
    ```git clone https://github.com/sandynomike/STM32F103-CMSIS-Blinky && cd STM32F103-CMSIS-Blinky```
