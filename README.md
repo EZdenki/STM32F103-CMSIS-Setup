@@ -1,4 +1,4 @@
-# STM32F103-CMSIS-Setup for Linux or Windows<br>(Windows instructions under construction...)
+# STM32F103-CMSIS-Setup for Linux or Windows
 Procedure to install command line toolchain and perform a sanity check to program the STM32F103 (Blue Pill) under Linux or Windows <br>
 <details>
    
